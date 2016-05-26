@@ -1,0 +1,99 @@
+# Dunning management
+# Copyright (C) 2014 Raphaël Doursenaud <rdoursenaud@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105301Name = Dunning
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105301Desc = Dunning management
+Permission1053011=See dunning
+Permission1053012=Edit dunning
+Permission1053013=Delete dunning
+
+#
+# Admin page
+#
+DunningSetup = Dunning setup
+Settings = Settings
+DunningPDFModels = Dunning PDF documents models
+DunningPDFTexts = Dunning PDF document texts
+Text = Text
+BeforeInvoiceList = Before invoice list
+AfterInvoiceList = After invoice list
+DunningNumberingRules=Numbering rules
+SimpleNumRefModelDesc=Return number format like %s-yymm-nnnn where yy is year, mm is month and nnnn numerix counter without reset.
+
+#
+# About page
+#
+About = About
+DunningAbout = About dunning
+DunningAboutPage = Dunning about page
+
+#
+# New dunning page
+#
+NewDunning = New dunning
+NoUnpaidInvoice = No unpaid invoice
+Use = Use
+NewDunningMass=Mass dunning creation
+NewDunningUnique=Dunning by customer
+DunningIvociePeriod=Filter invoice on validation date
+UseDelay=Use delault delay (%s days)
+AlreadySend=Already Send
+
+#
+# Dunning list page
+#
+NoOpennedDunning = No openned dunning
+DisplayAllDunning=Display all dunning
+HideDunningWithNoRestToPay=Hide dunning withiut rest to paid
+CreationMode=Creation mode
+DunningCreaMode_auto=Auto dunning 
+DunningCreaMode_manual=Manual dunning
+DunningContactFileName = dunning
+NoDunningSelected=No dunning selected
+LastSendEmailDate=Last email send
+SendEmail=Send Mail
+CannotSendMailDunningInvoiceContact=Cannot send email for dunning %s because there is no billing contact information on invoices (or contact do not have email)
+CannotSendMailDunningEmailFrom=Cannot send email for dunning %s because current user do not have email adress
+CannotSendMailDunningNoContact=Aucun email de contact demandeur ou facture pour envoyé cette relance
+LastPrintDate=Fusion PDF date
+
+#
+# Dunning record page
+#
+Dunning = Dunning
+DunningRecord = Dunning record
+ConfirmDeleteDunning=Are you sure to delete this dunning
+DunningRemoveInvoice=Remove invoice from this dunning
+SendReminderDunningRef=Dear Sir or Madam, <BR><BR> We may remind you that your client account currenctly presents a negative amount.<BR><BR> We're sure it's just an oversight of you. We thank you then to send us the payment of the total amount above. If ever you would have already settled it, please do not take into account this reminder.<BR><BR>We thank you.<BR><BR>Sincerely yours,<BR><BR>The Accounting Department <BR><BR> __SIGNATURE__
+SendReminderDunningTopic=Dunning
+DunningSendByMail=Dunning send by mail
+ActionAC_DUNNING_S=Dunning send by mail
+UseDelay=Late paiement since %s jours
+SendReminderBillByMail=Send dunning by mail
+
+#
+# PDF file
+#
+PDFShrimpDescription =  Full dunning PDF document model
+InvoiceReference = Invoice reference

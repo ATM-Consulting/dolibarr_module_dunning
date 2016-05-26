@@ -1,0 +1,100 @@
+# Dunning management
+# Copyright (C) 2014 Raphaël Doursenaud <rdoursenaud@gpcsolutions.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Générique
+#
+
+# Module label 'ModuleXXXName'
+# (where XXX is value of numeric property 'numero' of module)
+Module105301Name = Relances clients
+# Module description 'ModuleXXXDesc'
+# (where XXX is value of numeric property 'numero' of module)
+Module105301Desc = Gestion des relances clients
+Permission1053011=Voir les relances factures
+Permission1053012=Modifier les relances factures
+Permission1053013=Supprimer les relances
+
+#
+# Page d'administration
+#
+DunningSetup = Configuration du module relances clients
+Settings = Réglages
+DunningPDFModels = Modèles de documents de relance client PDF
+DunningPDFTexts = Textes du document de relance client PDF
+Text = Texte
+BeforeInvoiceList = Avant la liste de factures
+AfterInvoiceList = Après la liste de factures
+DunningNumberingRules=Régle de numérotation des relances
+SimpleNumRefModelDesc=Renvoie le numéro sous la forme %s-yymm-nnnn où yy est l'année, mm le mois et nnnn un compteur séquentiel sans rupture et sans remise à 0
+
+#
+# Page À propos
+#
+About = À propos
+DunningAbout = À propos des relances clients
+DunningAboutPage = Page à propos des relances clients
+
+#
+# Page de création
+#
+NewDunning = Nouvelle relance
+NoUnpaidInvoice = Pas de facture impayée
+Use = Utiliser
+NewDunningMass=Création de relance en masse
+NewDunningUnique=Création de relance par client
+DunningIvociePeriod=Filtré les factures par date de validation pour la création des relances en masses
+AlreadySend=Déja envoyé
+
+#
+# Page de liste
+#
+NoOpennedDunning = Pas de relance client ouverte
+DisplayAllDunning=Afficher toute les relances
+HideDunningWithNoRestToPay=Cacher les relances sans reste à payer
+CreationMode=Mode de création
+DunningCreaMode_auto=Relance automatique 
+DunningCreaMode_manual=Relance manuelle
+DunningContactFileName = relance_client
+NoDunningSelected=Pas de relance selectionné
+LastSendEmailDate=Dernier envoie mail
+SendEmail=Envoie Email
+CannotSendMailDunningInvoiceContact=L'email de la relance %s n'as pu être envoyé completement car les factures de cette relance n'ont pas de contact de facturation client (ou le contact n'a pas d'email)
+CannotSendMailDunningEmailFrom=Impossible d'envoyer l'email de la relance %s car l'email de l'utilisateur courant n'est pas renseigné.
+CannotSendMailDunningRequesterContact =Impossible d'envoyer l'email de la relance %s car l'email du demandeur n'est pas renseigné.
+CannotSendMailDunningNoContact=Aucun email de contact demandeur ou facture pour envoyé cette relance
+LastPrintDate=Date d'envoie courrier
+
+#
+# Page fiche
+#
+Dunning = Relance client
+DunningRecord = Fiche relance
+ConfirmDeleteDunning=Etes vous sûre de supprimer la cette relance ?
+DunningRemoveInvoice=Enlever cette facture de la relance
+SendReminderDunningRef=Bonjour, <BR><BR> Nous nous permettons de vous rappeler que votre compte client présente, à ce jour, un solde débiteur. Vous trouverez trouver ci-joint les factures concernées.<BR><BR> Nous pensons qu'il s'agit d'un oubli de votre part et vous remercions de bien vouloir nous adresser le règlement correspondant. Si vous l’avez déjà effectué, veuillez ne pas tenir compte de ce rappel.<BR><BR> En vous remerciant, nous vous prions de croire à l’assurance de nos salutations distinguées.<BR><BR>Le service comptable <BR><BR> __SIGNATURE__				
+SendReminderDunningTopic=Relance règlement
+DunningSendByMail=Relance réglement envoyée par email
+ActionAC_DUNNING_S=Relance réglement envoyée par email
+UseDelay=Retard de payement depuis %s jours
+SendReminderBillByMail=Envoie de relance par email
+
+
+#
+# Fichier PDF
+#
+PDFShrimpDescription = Modèle de relance client PDF complet
+InvoiceReference = Référence facture
